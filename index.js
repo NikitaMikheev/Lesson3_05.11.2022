@@ -1,26 +1,74 @@
-let age = 18
+let age; 
 let gender = "Мужской";
 
-    if (age>18) 
+if (Number(age)==age)
     {
-        console.log("Добро пожаловать")
-    } 
+        if (age===undefined)
+            {
+                console.log("Возраст не указан!");   
+            }
 
-    else if (age==18)
-    {
-        console.log("Добро пожаловать. Поздравляем вас с совершеннолетием!")   
+        else if (age>18) 
+            {
+                console.log("Добро пожаловать");
+            } 
+
+        else if (age==18)
+            {
+                console.log("Добро пожаловать. Поздравляем вас с совершеннолетием!");   
+            }
+
+        else 
+            {
+                console.log("Вход запрещен");  
+            }
     }
 
-    else
+else 
     {
-        console.log("Вход запрещен")   
+        console.log("Введите правильное число");
+    }
+
+let isUser = false
+console.log(`Добро пожаловать: ${isUser ? 'Пользователь' : 'Бот'}`);
+
+
+let typeUser = 'admin' // еще есть: 'guest', 'bot', 'user'
+
+switch (typeUser) 
+    {
+        case 'admin':
+            console.log('Добро пожаловать: ' + typeUser);
+            break;
+
+        case 'guest':
+            console.log('Добро пожаловать: ' + typeUser);
+            break;
+
+        case 'bot':
+            console.log('Добро пожаловать: ' + typeUser);
+            break;
+
+        case 'user':
+            console.log('Добро пожаловать: ' + typeUser);
+            break;
+
+        default:
+            console.log('Неверный тип пользователя ');
+            break;
     }
 
 
-if (gender.toLocaleLowerCase() === "мужской") {  /* Приводит к нижнему регистру переменную gender*/
-console.log("Вам направо");
+    
+// Вывести на экран числа от 1 до 10 через запятую
+
+let resultSrting = '';
+let startNumber = 10
+let endNumber = 0;
+
+
+while (startNumber-- > endNumber) {
+    resultSrting += `${startNumber}${startNumber !==endNumber ? ', ' : ''}`;
 }
 
-if (gender === "женский") {
-    console.log("Вам налево");
-}   
+console.log(resultSrting);
