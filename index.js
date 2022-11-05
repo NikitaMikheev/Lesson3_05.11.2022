@@ -1,7 +1,10 @@
-let age = 20;
 
-if (age > 18) {
-    console.log("Добро пожаловать");
+let gender = "Мужской"
+
+if (gender === "Мужской") {
+    console.log("Вам направо")
 }
-
  
+if (gender === "Женский") {
+    console.log("Вам налево")
+}
