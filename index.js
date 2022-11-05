@@ -1,10 +1,10 @@
 
 let gender = "Мужской";
 
-if (gender.toLocaleLowerCase() === "Мужской") {
+if (gender.toLocaleLowerCase() === "мужской") {
     console.log("Вам направо");
 }
  
-if (gender === "Женский") {
+if (gender === "женский") {
     console.log("Вам налево");
 }
